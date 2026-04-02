@@ -113,7 +113,7 @@ class _AddServiceScreenState extends State<AddServiceScreen> {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text("\${_serviceDate.toLocal()}".split(' ')[0]),
+                        Text("${_serviceDate.toLocal()}".split(' ')[0]),
                         const Icon(Icons.calendar_today),
                       ],
                     ),

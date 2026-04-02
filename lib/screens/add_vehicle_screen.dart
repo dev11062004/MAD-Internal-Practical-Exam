@@ -136,7 +136,7 @@ class _AddEditVehicleScreenState extends State<AddEditVehicleScreen> {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text("\${_purchaseDate.toLocal()}".split(' ')[0]),
+                        Text("${_purchaseDate.toLocal()}".split(' ')[0]),
                         const Icon(Icons.calendar_today),
                       ],
                     ),

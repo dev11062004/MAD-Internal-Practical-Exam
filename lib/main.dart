@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import 'services/hive_service.dart';
 import 'services/notification_service.dart';
@@ -34,31 +35,34 @@ class VehicleMaintenanceApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    const Color primaryColor = Color(0xFF4F46E5); // Indigo
+    const Color secondaryColor = Color(0xFF22C55E); // Green
+    const Color bgColor = Color(0xFFF9FAFB); // Light Grey
+
     return MaterialApp(
       title: 'Vehicle Service & Maintenance Tracker',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         useMaterial3: true,
+        scaffoldBackgroundColor: bgColor,
         colorScheme: ColorScheme.fromSeed(
-          seedColor: Colors.blue.shade800,
+          seedColor: primaryColor,
+          primary: primaryColor,
+          secondary: secondaryColor,
+          surface: Colors.white,
           brightness: Brightness.light,
         ),
-        fontFamily: 'Inter',
-        appBarTheme: const AppBarTheme(
+        textTheme: GoogleFonts.poppinsTextTheme(Theme.of(context).textTheme),
+        appBarTheme: AppBarTheme(
           centerTitle: true,
           elevation: 0,
-        ),
-      ),
-      darkTheme: ThemeData(
-        useMaterial3: true,
-        colorScheme: ColorScheme.fromSeed(
-          seedColor: Colors.blue.shade800,
-          brightness: Brightness.dark,
-        ),
-        fontFamily: 'Inter',
-        appBarTheme: const AppBarTheme(
-          centerTitle: true,
-          elevation: 0,
+          backgroundColor: bgColor,
+          foregroundColor: Colors.black87,
+          titleTextStyle: GoogleFonts.poppins(
+            color: Colors.black87,
+            fontSize: 20,
+            fontWeight: FontWeight.w600,
+          ),
         ),
       ),
       home: const MainScreen(),
