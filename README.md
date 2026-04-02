@@ -98,5 +98,5 @@ This project was built out in a modular execution format to ensure stability acr
 
 ## 👤 Author
 
-**Name**: User
+**Name**: 23IT020 Dev Dadhania
 **Course**: IT366 Mobile Application Development
