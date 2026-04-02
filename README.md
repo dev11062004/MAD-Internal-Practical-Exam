@@ -25,13 +25,9 @@ Keeping track of multiple vehicles, monitoring routine service schedules, and an
 
 These represent the application's core functionality including analytics, logging history, and the dashboard.
 
-| Dashboard Interface | Profile & Services |
-| :---: | :---: |
-| ![Dashboard](screenshots/dashboard.jpg) | ![Profile Services](screenshots/profile_booking.jpg) |
-
-| Vehicle Detail (Honda Civic) | Add Service Record |
-| :---: | :---: |
-| ![Vehicle Detail](screenshots/vehicle_detail.jpg) | ![Add Service](screenshots/add_service.jpg) |
+| Dashboard Interface | Profile & Services | Add Service Record |
+| :---: | :---: | :---: |
+| ![Dashboard](screenshots/dashboard.png) | ![Profile Services](screenshots/profile_booking.png) | ![Add Service](screenshots/add_service.png) |
 
 ---
 
